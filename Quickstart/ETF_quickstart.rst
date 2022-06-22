@@ -1,5 +1,5 @@
 :Author: Manuel Antonio Romero Caro
-:License: Creative Commons Attribution-ShareAlike 3.0 Unported  (CC BY-SA 3.0)
+:License: Creative Commons Attribution (cc-by) 4.0
 :Thanks: 
 
 @LOGO_ETF@
@@ -9,7 +9,7 @@
 
 
 .. |GS| replace:: GeoServer
-.. |UG| replace:: uDig 
+.. @NAME_ETF@ replace::ETF
 
 
 ********************************************************************************
@@ -56,12 +56,12 @@ The landing view shows the available Executable Test Suites.
 
 
   
-.. image:: /images/projects/ETF/geoserver-layerpreview.png
+.. image:: /images/projects/ETF/test-suite-selection-1.png
     :scale: 70 %
 
 Additional information about a Test Suite can be shown by clicking on the plus button. 
 
-.. image:: /images/projects/geoserver/geoserver-preview.png
+.. image:: /images/projects/ETF/test-suite-selection-2.png
     :scale: 70 %
     
 This information includes:
@@ -81,9 +81,15 @@ This information includes:
 
 To start a Test Run, a Test Suite must be selected with a click on the use flip switch on the right-hand side.
 
+.. image:: /images/projects/ETF/test-suite-selection-3.png
+    :scale: 70 %
+
 A Start button appears once at least one Test Suite is selected.
 
 A Test Suite is applicable to certain Test Object Types, that are listed in the description. Multiple Test Suites can be selected for one Test Run, but must be applicable to the same Test Object Type. Once one Test Suite is selected, the flip switch of all other Test Suites having different Test Object Types is disabled.
+
+.. image:: /images/projects/ETF/test-suite-selection-4.png
+    :scale: 70 %
 
 A Test Suite may depend on other Test Suites. The dependencies are also shown in the description of the Test Suites. These dependencies are also automatically executed during the test run.
 
@@ -93,6 +99,9 @@ A click on the Start button will open a new view that asks the user about the ta
 
 Test Run configuration
 ----------------------------------
+
+.. image:: /images/projects/ETF/test-run-configuration-1.png
+    :scale: 70 %
 
 The Label field is mandatory but automatically preset with the current time and names of the selected Test Suites. The Label will be shown in the Test reports overview and can be changed in order to help find the report again after a test run.
 
@@ -158,13 +167,22 @@ Monitor test runs
 
 After a Test Run has been started the Monitor View is shown.
 
+.. image:: /images/projects/ETF/monitor-test-runs-1.png
+    :scale: 70 %
+
 The blue bar indicates the progress.
+
+.. image:: /images/projects/ETF/monitor-test-runs-2.png
+    :scale: 70 %
 
 The console area shows information and result messages. The Test Run can be canceled with a click on the Cancel button.
 
 The view can be left, for instance with the X Button in the upper left corner. Also when the browser is closed, the Test Run execution continues on the server.
 
 To reopen the Monitor View after it has been closed, select in the menu bar the Status view. The Status view shows all running tests. A click on the Test Run opens the Monitor View of that Test Run.
+
+.. image:: /images/projects/ETF/monitor-test-runs-3.png
+    :scale: 70 %
 
 When a Test Run finishes and the Monitor View is opened, the Test Report is displayed automatically.
 
@@ -173,6 +191,9 @@ Test Reports
 ============
 
 The Test Reports view shows all reports that have been generated from Test Runs.
+
+.. image:: /images/projects/ETF/test-reports-1.png
+    :scale: 70 %
 
 By clicking on the plus button information, about the start time, the test result status, the name of the Test Object and the used Test Suites is shown.
 
@@ -186,13 +207,22 @@ Inspect test reports
 
 The top of a Test Report shows general information including the overall test result Status, the start time, the duration and a statistical table, which summarizes the status of all tests on several levels.
 
+.. image:: /images/projects/ETF/inspect-test-reports-1.png
+    :scale: 70 %
+
 The Test Reports are interactive. The Show switch can be used to filter Only failed or Only manual tests. All deactivates the filter.
 
 The Level of detail switch is used to show additional technical information in the reports.
 
+.. image:: /images/projects/ETF/inspect-test-reports-2.png
+    :scale: 70 %
+
 The test results are summarized hierarchically in a report. At the top level there are the Test Suites.
 
 By clicking on one test suite a description and all lower level tests in that test suite are shown. Failures in a test suite can be immediately recognized by the red color. The number of failed tests is shown in the top-right corner.
+
+.. image:: /images/projects/ETF/inspect-test-reports-3.png
+    :scale: 70 %
 
 The green color indicates a passed test. Passed tests which require additional manual test steps that could not be automated are colored orange. The orange color may also indicate a test that has been skipped because it depends on another test that has failed. The exact status can be found below the description.
 
@@ -212,8 +242,17 @@ In a file-based test, Test Modules and Test Steps do not exist and are not shown
 
 Each test provides a description on how aspects are tested and lists the requirements. The test may possess a link to an abstract test suite, from which the test has been derived (Source).
 
+.. image:: /images/projects/ETF/inspect-test-reports-4.png
+    :scale: 70 %
+
 Assertions stand for atomic test queries on the lowest level. Failed, red colored assertions display error messages in the Messages section.
 
+.. image:: /images/projects/ETF/inspect-test-reports-5.png
+    :scale: 70 %
+
 Helpful information may also be found on the next higher level, like for instance the response from a service on the Test Step level (note the Open saved response link in the report).
+
+.. image:: /images/projects/ETF/inspect-test-reports-6.png
+    :scale: 70 %
 
 
