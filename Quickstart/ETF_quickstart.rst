@@ -32,21 +32,30 @@ Introduction
 ===============
 
 From the Start menu, select |osgeolive-appmenupath-ETF|. The application will take a few moments to start up and will open a web page at http://localhost:9090/ETF 
+
+   .. image:: /images/projects/geoserver/geoserver-login.png
+    :scale: 70 %
     
 In the header, there is a menu with 4 options, representing each one differents views and functionalities: 
 
-   .. image:: /images/projects/ETF/introduction.png
+   .. image:: /images/projects/geoserver/geoserver-login.png
     :scale: 70 %
-    
 #. First one is Start test. In this section all available (respectively installed) Executable Test Suites are listed. Within this section, an Executable Test Suite can be selected and run against a Test Object..
 
+   .. image:: /images/projects/geoserver/geoserver-login.png
+    :scale: 70 %
 #. Second one is Status. This one shows all tests that are currently executed on the system and enables to open a monitor view for single test runs. can check the status of any running test. Moreover, below the running tests appear the components currently loaded
 
+   .. image:: /images/projects/geoserver/geoserver-login.png
+    :scale: 70 %
 #. Third one is Test reports. In this one the results any finished test can be checked, opened to see more details or downloaded.
 
+   .. image:: /images/projects/geoserver/geoserver-login.png
+    :scale: 70 %
 #. Fourth one is Help. This one is a link to the documentation. Inside it, there are guides on how to use all functionalities of ETF.
 
-
+.. image:: /images/projects/geoserver/geoserver-login.png
+:scale: 70 %
 
 Start test
 ===============
@@ -56,7 +65,7 @@ The landing view shows the available Executable Test Suites.
 
 
   
-   .. image:: /images/projects/ETF/geoserver-layerpreview.png
+   .. image:: /images/projects/geoserver/geoserver-layerpreview.png
     :scale: 70 %
 
 Additional information about a Test Suite can be shown by clicking on the plus button. 
@@ -106,23 +115,11 @@ If File upload is selected as Data source one or multiple local files can be sel
 
  .. note::	Other files, like schema definition files, can not be used and are silently ignored by the Validator!
 
-   .. image:: /images/projects/ETF/file-based-tests-1.png
-    :scale: 70 %
-
 The maximum uploadable file size is displayed when the mouse is moved over the question mark.
 
 If the data are available on the web they can be tested by providing one single URL. After Remote file (URL) has been selected as Data source, an URL to either one single XML, GML or a ZIP file can be entered.
 
-   .. image:: /images/projects/ETF/file-based-tests-2.png
-    :scale: 70 %
-
-
 If the URL requires authentication, username and password can be provided by clicking on Credentials.
-
-   .. image:: /images/projects/ETF/file-based-tests-3.png
-    :scale: 70 %
-
-
 
 Service Tests
 ----------------------------------
@@ -131,9 +128,6 @@ The following elements are shown when Test Suites have been selected that test o
 
 The URL of a service must be entered beginning with http:// or https:// .
 
-   .. image:: /images/projects/ETF/service-test-1.png
-    :scale: 70 %
-
 If the service requires authentication, username and password can be provided by clicking on Credentials.
 
 Dependencies and Parameters
@@ -141,15 +135,9 @@ Dependencies and Parameters
 
 The Test Suites button shows some basic information about the selected Test Suites and -if applicable- about the direct dependencies.
 
-   .. image:: /images/projects/ETF/dependencies-and-parameters-1.png
-    :scale: 70 %
-
 If the Test accepts parameters, they are shown in the Test Suite Parameters section. Optional parameters can be displayed by clicking on the Optional Parameters button. A description of the parameters is displayed when the mouse is moved over the question mark.
 
  .. note::	In most cases the preset default values can be used.
- 
-    .. image:: /images/projects/ETF/dependencies-and-parameters-2.png
-    :scale: 70 %
 
 Finally the test can be started by clicking on the Start button. The view then changes automatically to the Monitor View.
 
