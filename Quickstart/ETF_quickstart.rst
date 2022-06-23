@@ -1,4 +1,4 @@
-:Author: Manuel Antonio Romero Caro
+:Author: interactive instruments / JRC / Manuel Antonio Romero Caro
 :License: Creative Commons Attribution (cc-by) 4.0
 :Thanks: 
 
@@ -6,10 +6,6 @@
 @OSGEO_KIND_ETF@
 @VMDK_ETF@
 
-
-
-.. |GS| replace:: GeoServer
-.. @NAME_ETF@ replace::ETF
 
 
 ********************************************************************************
