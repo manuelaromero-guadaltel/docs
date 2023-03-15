@@ -23,7 +23,7 @@ jobs:
         run: |
           mkdir -p ./pr
           echo $R_NAME > ./r/r_name
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: r_name
           path: r/
