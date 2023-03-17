@@ -8,11 +8,17 @@ jobs:
   package: 
    runs-on: ubuntu-latest
    steps:
-   - name: release-downloader
-     uses: robinraju/release-downloader@v1.7
-     with:
-      latest: true
-      fileName: "inspire-validator-2023.1.zip"
+    - name: Download Release Asset
+      id: download_release_asset
+      uses: i3h/download-release-asset@v1
+      with:
+        owner: manuelaromero-guadaltel
+        repo: docs
+        tag:  latest
+        file: /inspire-validator-+[0-9]{4}[.][0-9]{1}+.zip/
+        path: .
+    - name: unzip
+      id: unzip
       
    
   build:
