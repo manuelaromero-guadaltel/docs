@@ -1,12 +1,20 @@
 name: Docker Image CI
 
 on:
-  workflow_run:
-    workflows: [Upload data]
-    types:
-      - completed
+  release:
+    types: [ published ]
 jobs:
 
+  package: 
+   runs-on: ubuntu-latest
+   steps:
+   - name: release-downloader
+     uses: robinraju/release-downloader@v1.7
+     with:
+      latest: true
+      fileName: "inspire-validator-2023.1.zip"
+      
+   
   build:
 
     runs-on: ubuntu-latest
