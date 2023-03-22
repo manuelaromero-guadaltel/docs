@@ -19,6 +19,7 @@ jobs:
         path: .
     - name: unzip
       id: unzip
+      run: unzip *.zip
       
    
   build:
