@@ -22,6 +22,7 @@ jobs:
           context: .
           load: true
           tags: manuelaromero:latest
+          push: true
       -
         name: Inspect
         run: |
