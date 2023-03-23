@@ -15,7 +15,7 @@ jobs:
         owner: manuelaromero-guadaltel
         repo: docs
         tag:  latest
-        file: /inspire-validator-+[0-9]{4}[.][0-9]{1}+.zip/
+        file: /inspire-validator-[0-9]{4}[.][0-9]{1}.zip/
         path: .
     - name: unzip
       id: unzip
