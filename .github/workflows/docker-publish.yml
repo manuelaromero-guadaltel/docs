@@ -31,10 +31,4 @@ jobs:
           context: .
           push: true
           tags: manuelaromero/test001:latest
-      -
-        name: Update repo description
-        uses: peter-evans/dockerhub-description@v3
-        with:
-          username: ${{ secrets.USER }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: manuelaromero/test001
+ 
