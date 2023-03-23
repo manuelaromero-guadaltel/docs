@@ -18,9 +18,9 @@ jobs:
       - name: Build and push Docker image
         uses: cloudposse/github-action-docker-build-push@1.9.0
         with:
-          organization: 
-          repository: 
-          registry: ${{ steps.meta.outputs.tags }}
-          image_name: ${{ steps.meta.outputs.labels }}
-          login:
-          password:
+          organization: manuelaromero-guadaltel
+          repository: docs
+          registry: hola
+          image_name: manuelaromero-guadaltel/docs
+          login:  ${{ secrets.USER }}
+          password:  ${{ secrets.PASSWORD }}
