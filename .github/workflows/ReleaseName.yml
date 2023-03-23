@@ -22,4 +22,4 @@ jobs:
                registry: registry.hub.docker.com
                login: ${{ secrets.USER }}
                password: ${{ secrets.PASSWORD }}
-               workdir: ./
+               workdir: ../
