@@ -20,6 +20,9 @@ jobs:
     - name: unzip
       id: unzip
       run: unzip *.zip
+    - name: lista
+      id: lista
+      run: ls ./
       
    
   build:
