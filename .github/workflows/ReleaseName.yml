@@ -19,6 +19,6 @@ jobs:
           with:
                organization: manuelaromero-guadaltel
                repository: docs
-               registry: test
+               registry: registry.hub.docker.com
                login: ${{ secrets.USER }}
                password: ${{ secrets.PASSWORD }}
